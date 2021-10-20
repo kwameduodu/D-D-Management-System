@@ -1,0 +1,32 @@
+<p id="title">DnD Management System</p>
+
+<div>
+      <p>
+        <mat-form-field appearance="standard" method="GET" action="http://localhost:4200/UserController/checkLogin">
+          <p class="headtext">Login Here</p>
+          <p class="logboxtext">Password:</p>
+          <input matInput placeholder="Placeholder" required id="passwordinput">
+          <p class="logboxtext">Username:</p>
+          <input matInput placeholder="Placeholder" required id="usernameinput">
+          <input id="submitButton" type="submit" vale="Login" required/>
+        </mat-form-field>
+      </p>
+</div>
+<p class="headtext">Or</p>
+<div>
+      <p>
+        <mat-form-field appearance="standard" method="POST" action="http://localhost:4200/UserController/index/createUser">
+          <p class="headtext">Create New Account</p>
+          <p class="logboxtext">Password:</p>
+          <input matInput placeholder="Placeholder" required id="passwordinput2">
+          <p class="logboxtext">Username:</p>
+          <input matInput placeholder="Placeholder" required id="usernameinput2">
+          <p class="logboxtext">Account Type:</p>
+          <select matNativeControl required id="accounttype">
+            <option value="player">Player</option>
+            <option value="DM">Dungeon Master</option>
+          </select>
+          <input id="submitButton2" type="submit" vale="Login" required/>
+        </mat-form-field>
+      </p>
+</div>
